@@ -7,6 +7,7 @@ from .diagnosis.route import router as diagnosis_router
 
 app = FastAPI(title="Medical Report Diagnosis")
 
+# Enable CORS for Streamlit frontend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -14,6 +15,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Include routers (prefixes are already defined inside route.py)
 app.include_router(auth_router)
 app.include_router(report_router)
 app.include_router(diagnosis_router)
