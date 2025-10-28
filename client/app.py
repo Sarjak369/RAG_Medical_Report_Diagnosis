@@ -10,7 +10,7 @@ from typing import Dict, Any
 load_dotenv()
 
 # Configuration
-API_URL = os.getenv("BASE_URL")
+API_URL = os.getenv("API_URL")
 # st.write(API_URL)
 
 # set page configurationRR
