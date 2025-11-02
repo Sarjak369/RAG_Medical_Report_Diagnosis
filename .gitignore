@@ -10,3 +10,10 @@ wheels/
 .venv
 
 .env
+
+
+assets/
+
+.DS_Store
+
+uv.lock
